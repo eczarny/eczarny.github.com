@@ -1,0 +1,78 @@
+@background-color:       #f7f7f7;
+@text-color:             #555;
+@link-color:             #000;
+@header-color:           #343434;
+@header-alternate-color: #CCC;
+
+* {
+  margin: 0px;
+}
+
+body {
+  background-color: @background-color;
+  color: @text-color;
+
+  font-family: museo-sans;
+  font-size: 1em;
+  font-weight: 200;
+
+  .centered {
+    margin: 25px auto 25px auto;
+  }
+
+  a {
+    color: @link-color;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  #content {
+    width: 600px;
+    .centered;
+
+    #header {
+      padding: 15px 0px 15px 0px;
+
+      h1 {
+        color: @header-color;
+        font-family: facitweb;
+        font-size: 3.2em;
+        font-weight: 200;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 8px;
+
+        span {
+          color: @header-alternate-color;
+        }
+      }
+
+      h2 {
+        padding: 5px 0px 15px 0px;
+        color: @header-color;
+        font-family: facitweb;
+        font-size: 1.0em;
+        font-weight: 100;
+        text-align: center;
+      }
+    }
+
+    h2 {
+      padding: 15px 0px 15px 0px;
+      color: @header-color;
+      font-family: facitweb;
+      font-size: 1.8em;
+      font-weight: 300;
+      text-align: left;
+    }
+
+    p {
+      padding: 5px 0px 5px 0px;
+      letter-spacing: 1px;
+      line-height: 140%;
+    }
+  }
+}
